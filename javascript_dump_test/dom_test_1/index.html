@@ -15,6 +15,27 @@
       <a href="https://www.mozilla.org/">Mozilla homepage</a>
     </p>
   </section>
+
+  <script>
+    const link = document.querySelector("a");
+    link.textContent = "Mozilla Developer Network";
+    link.href = "https://developer.mozilla.org";
+
+    const sect = document.querySelector("section");
+    const para = document.createElement("p");
+    para.textContent = "Here is a newly added paragraph";
+    sect.appendChild(para);
+
+    const text = document.createTextNode(
+      " - the premier source for web development knowledge.",
+    );
+
+    const linkPara = document.querySelector("p");
+    linkPara.appendChild(text);
+
+    sect.removeChild(para);
+    linkPara.parentNode.removeChild(linkPara);
+  </script>
 </body>
 
 </html>
