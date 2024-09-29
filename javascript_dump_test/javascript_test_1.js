@@ -9,3 +9,20 @@ console.log(madeAnotherString);
 
 const madeYetAnotherString = myArray.join("");
 console.log(madeYetAnotherString);
+
+function hello(name = "Chris") {
+  console.log(`Hello ${name}!`);
+}
+
+hello("Ari"); // Hello Ari!
+hello(); // Hello Chris!
+
+name = "Ariv2";
+
+console.log(`Hello ${name}!`);
+
+function logKey(event) {
+  console.log(`You pressed "${event.key}".`);
+}
+
+textBox.addEventListener("keydown", logKey);
