@@ -4,6 +4,16 @@
 <head>
   <meta charset="utf-8" />
   <title>Simple DOM example</title>
+
+  <style>
+    .highlight {
+      color: white;
+      background-color: black;
+      padding: 10px;
+      width: 250px;
+      text-align: center;
+    }
+  </style>
 </head>
 
 <body>
@@ -32,9 +42,17 @@
 
     const linkPara = document.querySelector("p");
     linkPara.appendChild(text);
+    /*
+sect.removeChild(para);
+linkPara.parentNode.removeChild(linkPara); */
 
-    sect.removeChild(para);
-    linkPara.parentNode.removeChild(linkPara);
+    /*para.style.color = "white";
+para.style.backgroundColor = "black";
+para.style.padding = "10px";
+para.style.width = "250px";
+para.style.textAlign = "center";
+*/
+    linkPara.style.fontSize = "2em";
   </script>
 </body>
 
