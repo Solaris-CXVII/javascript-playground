@@ -4,10 +4,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title></title>
-  <link href="css/style.css" rel="stylesheet" />
+  <title>Note Taking App</title>
+  <link href="/style.css" rel="stylesheet" />
 </head>
 
-<body></body>
+<body>
+  <div class="container">
+    <h1>Note Taking App</h1>
+    <div class="note-form">
+      <input type="text" id="noteTitle" placeholder="Title" />
+      <textarea id="notContent" placeholder="Enter your note"></textarea>
+      <button id="addNoteBtn">Add Note</button>
+    </div>
+    <ul id="noteList"></ul>
+  </div>
+  <script src="/script.js"></script>
+</body>
 
 </html>
