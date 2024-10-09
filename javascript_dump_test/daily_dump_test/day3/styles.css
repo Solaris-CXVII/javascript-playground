@@ -1,22 +1,80 @@
-.body {}
+.body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 20px;
+}
 
-h1 {}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-ul {}
+h1 {
+  text-align: center;
+  color: #333;
+}
 
-li {}
+ul {
+  list-style: none;
+  padding: 0;
+}
 
-li span {}
+li {
+  display: flex;
+  justify-content: space-between;
+  background-color: #e9ecef;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  align-items: center;
+}
 
-li button {}
+li span {
+  flex: 1;
+  padding: 0 10px;
+}
 
-lu button.edit-btn {}
+li button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 5px;
+}
 
-.note-form {}
+li button.edit-btn {
+  background-color: #ffc107;
+}
+
+.note-form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
 
 .note-form input,
-.note-form textarea {}
+.note-form textarea {
+  width: 45%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
 
-.note-form textarea {}
+.note-form textarea {
+  height: 100px;
+}
 
-.note-form button {}
+.note-form button {
+  width: 10%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
