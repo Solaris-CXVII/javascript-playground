@@ -26,3 +26,8 @@ function logKey(event) {
 }
 
 textBox.addEventListener("keydown", logKey);
+
+// random comment
+//
+
+const lalovesko = "siya";
